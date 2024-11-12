@@ -1,0 +1,14 @@
+.heading {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #2a2a2a;
+    text-align: center; /* Centered text */
+}
+
+.fancy-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #4b0082; /* Indigo */
+    text-align: justify; /* Justified text */
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+.box {
+    width: 300px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    background-color: #add8e6; /* Light blue */
+    margin-bottom: 20px;
+}
+
+.responsive-box {
+    width: 50%; /* 50% of the parent container */
+    height: 30%; /* 30% of the viewport height */
+    background-color: #90ee90; /* Light green */
+}

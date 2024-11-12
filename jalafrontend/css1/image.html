@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Image</title>
+    <style>
+        .multi-bg {
+            height: 100vh; /* Full viewport height */
+            background-size: cover; /* Ensures the background image covers the whole page */
+            background-position: center; /* Center the background image */
+            transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="multi-bg">
+        <h1>Changing Background Images</h1>
+    </div>
+
+    <script>
+        // Array of image paths for the background
+        const images = [
+            './static/image1.png',
+            './static/image.png',
+    
+        ];
+
+        let currentIndex = 0;
+
+        // Function to change the background image
+        function changeBackground() {
+            const bgElement = document.querySelector('.multi-bg');
+            
+            // Set the background image to the next one in the array
+            bgElement.style.backgroundImage = `url('${images[currentIndex]}')`;
+
+            // Increment the index and loop back to the first image if at the end
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Change background image every 5 seconds (5000ms)
+        setInterval(changeBackground, 5000);
+
+        // Initial background change when the page loads
+        changeBackground();
+    </script>
+</body>
+</html>
+

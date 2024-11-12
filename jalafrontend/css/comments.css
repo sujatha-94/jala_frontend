@@ -1,0 +1,19 @@
+/* Container styles */
+.container {
+    width: 80%; /* Adjusts the container width */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds space inside the container */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2em; /* Sets a larger font size */
+    color: #333; /* Sets text color */
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1em; /* Standard font size */
+    line-height: 1.5; /* Spacing between lines */
+    color: #666; /* Gray text color */
+}

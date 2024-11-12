@@ -1,0 +1,7 @@
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    background-image: url('image.png'); /* Replace with your image path */
+    background-size: cover; /* Scales the image to cover the entire page */
+    background-attachment: fixed; /* Image doesn't scroll */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
